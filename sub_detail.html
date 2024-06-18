@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정밀가공사업 - 가공제품</title>
+    <link rel="stylesheet" href="css/sub_detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/sub_detail.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <header>
+
+            <div class="header_wrap">
+                <div id="logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+
+                <!-- -----------------모바일 사이드 메뉴바 -->
+                <input type="checkbox" id="menu_chk">
+                <div id="header">
+
+                <label for="menu_chk" id="menu_icon" class="hide">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+            </div>
+
+                <div id="side_menu">
+                    <div class="side_login">
+                        <i class="fas fa-solid fa-user"style="color:#fff">&nbsp;&nbsp;Login | Join</i>
+                    </div>
+                    <div class="side_search">
+                        <input type="text">
+                        <div class="side_icon">
+                            <span class="material-symbols-outlined"style="color:#03257C">
+                                search
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <ul class="menu_list">
+                    <li><a href="#">회사소개</a>
+                        <ul class="side_sub_menu">
+                            <li><a href="sub_info.html">회사소개</a></li>
+                            <li><a href="#">회사연혁</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">인증현황</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">정밀가공사업</a>
+                        <ul class="side_sub_menu">
+                            <li><a href="#">설비현황</a></li>
+                            <li><a href="#">측정장비현황</a></li>
+                            <li><a href="sub_detail.html">가공제품</a></li>
+                            <li><a href="#">중고제품</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">설비자동화사업</a>
+                        <ul class="side_sub_menu">
+                            <li><a href="#">납품실적</a></li>
+                            <li><a href="#">CNC 자동화</a></li>
+                            <li><a href="#">CNC OVERHAUL</a></li>
+                            <li><a href="#">단순가공기 제작</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">고객문의</a>
+                        <ul  class="side_sub_menu">
+                            <li><a href="#">고객사</a></li>
+                            <li><a href="#">이메일문의</a></li>
+                            <li><a href="#">견적 상담</a></li>
+                            <li><a href="#">자유게시판</a></li>
+    
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            
+            
+            <label for="menu_chk" id="side_bg"></label>
+  
+
+                <!-- -----------------/모바일 사이드 메뉴바 -->
+        
+                
+                    <ul class="main_menu">
+                        <!-- main_menu li -->
+                        <li>
+                            <a href="#">회사소개</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub_info.html">회사소개</a></li>
+                                <li><a href="#">회사연혁</a></li>
+                                <li><a href="#">조직도</a></li>
+                                <li><a href="#">인증현황</a></li>
+                            </ul>
+                        </li>
+                        <!-- /main_menu li -->
+        
+                        <!-- main_menu li -->
+                        <li>
+                            <a href="#">정밀가공사업</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">설비현황</a></li>
+                                <li><a href="#">측정장비현황</a></li>
+                                <li><a href="#">가공제품</a></li>
+                                <li><a href="#">중고제품</a></li>
+                     
+                            </ul>
+                        </li>
+                        <!-- /main_menu li -->
+                        
+                        <!-- main_menu li -->
+                        <li>
+                            <a href="#">설비자동화사업</a>
+                            <ul class="sub_menu">
+                                <li><a href="#">납품실적</a></li>
+                                <li><a href="#">CNC 자동화</a></li>
+                                <li><a href="#">CNC OVERHAUL</a></li>
+                                <li><a href="#">단순가공기 제작</a></li>
+                            </ul>
+                        </li>
+                        <!-- /main_menu li -->
+                        
+                        <!-- main_menu li -->
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul id="none" class="sub_menu">
+                                <li><a href="#">고객사</a></li>
+                                <li><a href="#">이메일문의</a></li>
+                                <li><a href="#">견적 상담</a></li>
+                                <li><a href="#">자유게시판</a></li>
+        
+                            </ul>
+                        </li>
+
+                        <li id="login"><a href="#" class="fas fa-solid fa-globe">  ENG  |  lOGIN</a></li>
+
+                        <!-- /main_menu li -->
+                    </ul>
+                    
+                    
+                        
+            </div>
+    
+          </header>
+
+          <main>
+            <div class="top_img">
+                <img src="img/sub_bg1.png" alt="">
+                <h1>정밀가공사업</h1>
+            </div>
+
+            <div class="sub_icon">
+               <a href="index.html"> <span class="material-symbols-outlined">
+                home
+                </span></a>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                        </span>
+                <div>정밀가공사업</div>
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span>
+                <div>가공제품</div>
+            </div>
+
+            </main>
+
+
+            <section class="area-wrap">
+
+                 <div class="left_nav">
+                <ul class="gnb">
+                    <li><a href="#">설비현황</a></li>
+                    <li><a href="#">측정장비현황</a></li>
+                    <li><a href="#">가공제품</a></li>
+                    <li><a href="#">중고제품</a></li>
+                </ul>
+            </div>
+
+            <div class="right">
+               
+                <div id="info_box">
+                    
+                    <h1>가공제품</h1>
+
+                    <div class="container">
+
+                     
+
+                        <ul class="tabs">
+                            <li class="tab-link current" data-tab="tab-1"><a href="#">부품</a></li>
+                            <li class="tab-link" data-tab="tab-2"><a href="#">GAS CYLINDER &  GAS SPRING</a></li>
+                            <li class="tab-link" data-tab="tab-3"><a href="#">솔레노이드 밸브 &  공압실린더</a></li>
+                          
+                        </ul>
+
+                                <div id="tab-1" class="tab-content current">
+
+                                    <ul class="tab-1_sub">
+                                        <li><a href="#tab1">자동차부품</a></li>
+                                        <li><a href="#tab2">가전전자부품</a></li>
+                                        <li><a href="#tab3">LED부품</a></li>
+                                        <li><a href="#tab4">기타부품</a></li>
+                                    </ul>
+
+                                   <div class="tab_1_1 active" id="tab1">
+
+                                    <div class="tab_1_box">
+                                        <h2>ECV</h2>
+                                    <hr style="width: 80%;">
+                                    <img src="img/sub_detail_right_sub_menu01.png" alt="">
+                                        <h2>magentic</h2>
+                                    <hr style="width: 80%;">
+                                    <img src="img/sub_detail_magentic core.PNG" alt="">
+                                    </div>
+                                    
+                                    <!-- 캐러셀 소스 -->
+                                     <div class="carousel">
+                                        <div class="view">
+                                            <ul class="list">
+
+                                                <li>
+                                                   <ul>
+                                                       <li class="a1"><img src="img/sub_detail_body.png" alt="">
+                                                        <div class="text">BODY</div>
+                                                    </li>
+                                                       <li class="a1"><img src="img/sub_detail_sttoper 1.png" alt="">
+                                                        <div class="text">STOPPER</div>
+                                                    </li>
+                                                       <li class="a1"><img src="img/sub_detail_plunger.png" alt="">
+                                                        <div class="text">PLUNGER</div>
+                                                    </li>
+                                                   </ul>
+                                                </li>
+
+                                                <li>
+                                                    <ul>
+                                                        <li class="a1"><img src="img/sub_detail_guide tube.png" alt="">
+                                                            <div class="text">GUIDE TUBE</div>
+                                                        </li>
+                                                        <li class="a1"><img src="img/sub_detail_core.png" alt="">
+                                                            <div class="text">CORE</div>
+                                                        </li>
+                                                        <li class="a1"><img src="img/sub_detail_under cap.png" alt="">
+                                                            <div class="text">UNDER CAP</div>
+                                                        </li>
+                                                   </ul>
+                                                </li>
+
+                                                <li>
+                                                    <ul>
+                                                        <li class="a1"><img src="img/sub_detail_sleeve.png" alt="">
+                                                        <div class="text">SLEEVE</div>
+                                                        </li>
+                                                        <li class="a1"><img src="img/sub_detail_plunger shaft.png" alt="">
+                                                        <div class="text">PLUNGER SHAFT</div>
+                                                        </li>
+                                                   </ul>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <p class="prev">&#10094;</p>
+                                        <p class="next">&#10095;</p>
+                                    </div>
+                                       
+                                    <!-- /캐러셀 소스 -->
+
+
+                                    <div class="outer hide">
+                                        <div class="inner-list">
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_body.png" alt="">
+                                                <div class="text">BODY</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_sttoper 1.png" alt="">
+                                                <div class="text">STOPPER</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_plunger.png" alt="">
+                                                <div class="text">PLUNGER</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_guide tube.png" alt="">
+                                                <div class="text">GUIDE TUBE</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_core.png" alt="">
+                                                <div class="text">CORE</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_under cap.png" alt="">
+                                                <div class="text">UNDER CAP</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_sleeve.png" alt="">
+                                                <div class="text">SLEEVE</div>
+                                          </div>
+                                          <div class="inner">
+                                            <li class="a1"><img src="img/sub_detail_plunger shaft.png" alt="">
+                                                <div class="text">PLUNGER SHAFT</div>
+                                          </div>
+                        
+                                          <div class="button-list hide">
+                                            <button class="button-left">← Left</button>
+                                            <button class="button-right">Right →</button>
+                                          </div>
+                                        </div>
+                                        
+                                      </div>
+                                   
+
+                                   </div>
+
+                                   <!-- ---------------------------------------tab_1_1 끝 -->
+
+                                   <div class="tab_1_2 active" id="tab2">
+
+                                    <h2>가전전자제품</h2>
+                                    <hr style="width: 80%;">
+                                    <img src="img/sub_detail04.PNG" alt="">
+                                    
+                                    <div class="tab_1_2_sub">
+                                        <img src="img/sub_detail04_DECO KNOB.PNG" alt="">
+                                        <div class="hide_text hide">DECO KNOB</div>
+                                        <img src="img/sub_detail04_DECO RING.PNG" alt="">
+                                        <div class="hide_text hide">DECO RING</div>
+                                        <img src="img/sub_detail04_DECO WINDOW.PNG" alt="">
+                                        <div class="hide_text hide">DECO WINDOW</div>
+                                    </div>
+                                    
+                                    <div class="tab_1_2_sub_text">
+                                        <h4>DECO KNOB</h4>
+                                        <h4>DECO RING</h4>
+                                        <h4>DECO WINDOW </h4>
+                                    </div>
+
+                                   </div>
+                                        
+
+                                   <div class="tab_1_3 active" id="tab3">
+
+                                    <h2>LED 제품(방열판)</h2>
+                                    <hr style="width: 80%;">
+
+                                    <div class="wrapp">
+                                        <div class="box_wrap">
+                                            <div class="box">
+                                                <div class="content"><img src="img/sub_detail05_1.PNG" alt=""></div>
+                                                <div class="content"><img src="img/sub_detail05_2.PNG" alt=""></div>
+                                                <div class="content"><img src="img/sub_detail05_3.PNG" alt=""></div>
+                                                <div class="content"><img src="img/sub_detail05_4.PNG" alt=""></div>
+                                                <div class="content"><img src="img/sub_detail05_5.PNG" alt=""></div>
+                                                <div class="content"><img src="img/sub_detail05_6.PNG" alt=""></div>
+                                            </div>
+                                        </div>
+                                
+                                
+                                
+                                        <div class="prev_1">&#10094;</div>
+                                        <div class="next_1">&#10095;</div>
+                                    </div>
+
+
+                                   </div>
+
+                                   <div class="tab_1_4 active" id="tab4">
+
+                                    <h2>기타 부품</h2>
+                                    <hr style="width: 80%;">
+
+                                    <div class="tab_1_4_sub">
+                                      <div class="sub_11">
+                                        <li><img src="img/sub_detail06_1.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_2.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_3.PNG" alt=""></li>
+                                      </div>
+                                     <div class="sub_11">
+                                        <li><img src="img/sub_detail06_4.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_5.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_6.PNG" alt=""></li>
+                                     </div>
+                                    </div>
+
+                                    <div class="tab_1_4_subb hide">
+                                      <div class="sub_11">
+                                        <li><img src="img/sub_detail06_1.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_2.PNG" alt=""></li>
+                                        
+                                      </div>
+                                     <div class="sub_11">
+                                        
+                                        <li><img src="img/sub_detail06_5.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_6.PNG" alt=""></li>
+                                     </div>
+                                     <div class="sub_11">
+                                        
+                                        <li><img src="img/sub_detail06_3.PNG" alt=""></li>
+                                        <li><img src="img/sub_detail06_4.PNG" alt=""></li>
+                                     </div>
+                                    </div>
+                                    
+
+                                   </div>
+
+
+                                        
+                                        <!-- 탭1 닫기 -->
+                                        </div>
+
+                                        <!-- ----------------------------/tap 1 -->
+                                        
+                                        
+                                        <!-- ----------------------------tap 2 -->
+                                        
+                                        <div id="tab-2" class="tab-content">
+                                            <h2>< GAS CYLINDER & GAS SPRING></h2>
+                                            <hr style="width: 80%;">
+                                            <img src="img/sub_detail_gas cylinder.png" alt="">
+                                            
+                                            <div class="sub_detail_img">
+                                                <img src="img/sub_detail_PIPE HOLDER.PNG" alt="">
+                                                <div class="hide_text hide">PIPE HOLDER</div>
+                                                <img src="img/sub_detail_piston.PNG" alt="">
+                                                <div class="hide_text hide">PISTON</div>
+                                                <img src="img/sub_detail_GAS SPRING PISTON & ROD.PNG" alt="">
+                                                <div class="hide_text hide">GAS SPRING PISTON & ROD</div>
+                                            </div>
+                                            
+                                            <div class="img_text">
+                                                <h4>PIPE HOLDER</h4>
+                                                <h4>PISITON</h4>
+                                                <h4>GAS SPRIG PISTON <br>& ROD</h4>
+                                            </div>
+                            
+                                            </div>
+
+                                            
+                                        
+        
+                                            <!--------------------------------------------------------------/tap 2 -->
+
+                                        <div id="tab-3" class="tab-content">
+                                            <h2>< GAS CYLINDER & GAS SPRING></h2>
+                                            <hr style="width: 80%;">
+                                            <img src="img/sub_detail03.PNG" alt="">
+                                            
+                                            <div class="sub_detail_img">
+                                                <img src="img/sub_detail03_1.PNG" alt="">
+                                                <img src="img/sub_detail03_2.PNG" alt="">
+                                                <img src="img/sub_detail03_3.PNG" alt="">
+                                                <img src="img/sub_detail03_4.PNG" alt="">
+                                                <img src="img/sub_detail03_5.PNG" alt="">
+                                              
+                                            </div>
+                                           
+                                        </div>
+
+                                            <!-- 컨테이너 -->
+                                        </div>
+                                <!-- 인포박스 -->
+                            </div>
+                <!-- 라이트 -->
+                    </div>
+        <!-- 아레아 랩                                                               -->
+    </section>
+
+    <footer>
+        <div class="footer_wrap">
+        <div id="logo">
+        <div class="logo_img">
+            <img src="img/logo.png" alt="">
+            <h1>(주)대진이엔지</h1>
+        </div>
+
+        <a href="#" class="top"><i class="fas fa-solid fa-chevron-up"></i> <br>TOP</a>
+
+      
+    </div>
+
+    <div class="info">
+        <div class="left">
+            <h1>경기도 안산시 단원구 엠티브이 12로22번기 12(성곡동 809-1)</h1>
+        <span>TEL) 031-434-0855 <br> FAX)031-434-0859</span>
+        </div>
+
+        <div class="right">
+            <h1>법적 고지 <br>
+                공시정보 관리규정</h1>
+                <span>Copyright by 주식회사 대진이엔지 all rights reserved</span>
+        </div>
+    </div>
+</div>
+</footer>
+
+<!-- 전체 랩 -->
+</div>
+            
+
+       
+
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+
+if (n > slides.length) {slideIndex = 1}    
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+}
+
+slides[slideIndex-1].style.display = "block";  
+};
+    
+    </script>
+</div>
